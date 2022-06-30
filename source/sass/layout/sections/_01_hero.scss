@@ -1,0 +1,122 @@
+section.hero{
+	height: 100vh;
+	background-color: $cskin;
+	z-index: 2;
+	img{
+		&.corner_left{
+			position: absolute;
+			width: 23vw;
+			left: 0;
+			bottom: 0;
+			transform: translateY(1px);
+		}
+		&.corner_right{
+			position: absolute;
+			width: 9vw;
+			right: 0;
+			bottom: 0;
+			transform: translateY(1px);
+		}
+		&.corner_right_dots{
+			position: absolute;
+			width: 13vw;
+			right: 0;
+			bottom: 0;
+			transform: translateY(2vw);
+		}
+	}
+	div.hero_body{
+		padding: 9% 0 3%;
+		@media(max-width: 1024px){
+			padding: 160px 20px 30px;
+			overflow: hidden;
+		}
+		@media(max-width: 768px){
+			padding: 140px 20px 30px;
+		}
+		@media(max-width: 420px) and (max-height: 700px){
+			padding: 100px 20px 30px;
+		}
+		h1{
+			margin-bottom: 8vh;
+			padding: 0 25%;
+			color: $ccorp;
+			font-size: 7.5vh;
+			font-family: $ffmain;
+			font-weight: 400;
+			text-align: center;
+			line-height: 1;
+			@media(max-width: 1680px){
+				
+			}
+			@media(max-width: 1366px){
+				
+			}
+			@media(max-width: 1280px){
+				
+			}
+			@media(max-width: 1024px){
+				margin-bottom: 5vh;
+				padding: 0;
+				font-size: 5.5vh;
+			}
+			@media(max-width: 768px){
+				
+			}
+			@media(max-width: 576px){
+				
+			}
+		}
+		div.hero_images{
+			display: grid;
+			height: 33vh;
+			margin-bottom: 4vh;
+			padding: 0 4vw;
+			@media(max-width: 1024px){
+				width: 360px;
+				height: 210px;
+				margin: 0 auto 9vh;
+				padding: 0;
+			}
+			@media(max-width: 420px){
+				width: 100%;
+				margin: 0 auto 4vh;
+			}
+			img{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				max-width: none;
+				height: 100%;
+				@media(max-width: 1024px){
+					display: none;
+				}
+				&.mobile{
+					display: none;
+					@media(max-width: 1024px){
+						display: block;
+					}
+					@media(max-width: 576px){
+						width: 100%;
+						height: auto;
+						transform: translate(-50%, -50%) scale(1.2);
+					}
+				}
+			}
+		}
+		h2{
+			margin-bottom: 3vh;
+			color: $ccorp;
+			font-size: 3vh;
+			font-family: $ffmain;
+			font-weight: 400;
+			text-align: center;
+			line-height: 1;
+		}
+		div.more{
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+section.message{
+	background-color: $cyellow;
+	h3{
+		color: $ccorp;
+		font-size: 7.3vw;
+		font-family: $ffmain;
+		font-weight: 400;
+		text-align: center;
+		line-height: 1.1;
+		@media(max-width: 768px){
+			font-size: 10.3vw;
+		}
+	}
+	&:after{
+		display: block;
+		content: '';
+		height: 10vw;
+		background: linear-gradient(0deg, $ccyan 0%, $cyellow 100%);
+		@media(max-width: 1024px){
+			height: 20vw;
+			margin-top: 50px;
+		}
+	}
+}

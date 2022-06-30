@@ -1,0 +1,63 @@
+section.for_retailers_intro{
+	padding: 13vw 0 5vw;
+	background-color: $cskin;
+	div.for_retailers_intro_container{
+		display: grid;
+		grid-gap: 10vw;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 0 10vw;
+		@media(max-width: 1024px){
+			padding: 0 40px;
+		}
+		@media(max-width: 576px){
+			grid-gap: 10px;
+			grid-template-columns: 1fr;
+			padding: 0 20px;
+		}
+		div.for_retailers_intro_left{
+			h1.title{
+				text-align: left;
+			}
+		}
+		div.for_retailers_intro_right{
+			div.default_text{
+				margin-bottom: 2vw;
+			}
+			div.toonish_tomat_products{
+				display: grid;
+				grid-gap: 2vw;
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+	}
+}
+section.for_retailers_contact{
+	background-color: $cskin;
+	div.for_retailers_contact_container{
+		display: grid;
+		grid-gap: 10vw;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: start;
+		padding: 0 10vw;
+		@media(max-width: 1024px){
+			grid-gap: 40px;
+			padding: 0 40px;
+		}
+		@media(max-width: 768px){
+			grid-template-columns: 1fr;
+		}
+		@media(max-width: 576px){
+			grid-gap: 20px;
+			padding: 0 20px;
+		}
+	}
+	&:after{
+		display: block;
+		content: '';
+		height: 10vw;
+		background: linear-gradient(0deg, $cred 0%, $cskin 100%);
+		@media(max-width: 1024px){
+			height: 20vw;
+		}
+	}
+}

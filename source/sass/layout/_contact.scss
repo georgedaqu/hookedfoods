@@ -1,0 +1,43 @@
+section.contact{
+	padding: 13vw 0 5vw;
+	background-color: $cyellow;
+	@media(max-width: 1024px){
+		padding: 110px 0 40px;
+	}
+	div.contact_container{
+		display: grid;
+		grid-gap: 10vw;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: start;
+		padding: 0 10vw;
+		@media(max-width: 1024px){
+			grid-gap: 40px;
+			padding: 0 40px;
+		}
+		@media(max-width: 768px){
+			grid-template-columns: 1fr;
+		}
+		@media(max-width: 576px){
+			grid-gap: 20px;
+			padding: 0 20px;
+		}
+		div.contact_left{
+			h1.title{
+				margin-bottom: 3vw;
+				text-align: left;
+				@media(max-width: 768px){
+					margin-bottom: 20px;
+				}
+			}
+		}
+		div.contact_right{
+			padding-top: 3vw;
+			@media(max-width: 768px){
+				padding-top: 0;
+			}
+			div.default_text{
+				margin-bottom: 2vw;
+			}
+		}
+	}
+}

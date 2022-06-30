@@ -1,0 +1,84 @@
+section.waves{
+	z-index: 1;
+	img{
+		&.curves{
+			width: 100vw;
+			transform: translateY(-1px);
+			z-index: 2;
+		}
+		&.bak{
+			@extend .fit-cover;
+			z-index: 1;
+		}
+	}
+	div.waves_container{
+		display: flex;
+		align-items: flex-end;
+		padding: 10vw 13vw 20vw 25vw;
+		@media(max-width: 1366px){
+			padding: 10vw 13vw 20vw 20vw;
+		}
+		@media(max-width: 1024px){
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			padding: 10vw 40px 15vw 40px;
+		}
+		@media(max-width: 768px){
+			padding: 10vw 30px 15vw 30px;
+		}
+		@media(max-width: 576px){
+			padding: 10vw 20px 15vw 20px;
+		}
+		z-index: 3;
+		a.round_button{
+			margin-right: 10vw;
+			@media(max-width: 1024px){
+				order: 2;
+				margin-right: 0;
+			}
+		}
+		div.waves_texts{
+			color: $cwhite;
+			@media(max-width: 1024px){
+				order: 1;
+				margin-bottom: 40px;
+			}
+			h3.waves_title{
+				margin-bottom: 2vw;
+				font-size: 5.5vh;
+				font-family: $ffmain;
+				font-weight: 400;
+				line-height: 1;
+				@media(max-width: 1024px){
+					font-size: 36px;
+				}
+				@media(max-width: 768px){
+					margin-bottom: 20px;
+					font-size: 26px;
+				}
+			}
+			div.waves_desc{
+				margin-bottom: 2vw;
+				font-size: 2.5vh;
+				line-height: 1.2;
+				@media(max-width: 768px){
+					margin-bottom: 20px;
+					font-size: 18px;
+				}
+			}
+			h4.waves_subtitle{
+				font-size: 3.7vh;
+				font-family: $ffmain;
+				font-weight: 400;
+				line-height: 1;
+				@media(max-width: 1024px){
+					font-size: 30px;
+				}
+				@media(max-width: 576px){
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}

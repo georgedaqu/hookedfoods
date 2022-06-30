@@ -1,0 +1,98 @@
+section.hooked{
+	background-color: $cred;
+	z-index: 2;
+	div.curves_image{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 0;
+		margin-top: 1px;
+		line-height: 0;
+		transform: translateY(-100%);
+		z-index: 1;
+		img{
+			&.curve1{
+				@extend .no-select;
+				width: 100vw;
+				z-index: 1;
+			}
+			&.curve2{
+				@extend .no-select;
+				width: 100vw;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 3;
+			}
+			&.image{
+				position: absolute;
+				width: 40vw;
+				left: 50%;
+				top: 2px;
+				transform: translateX(-50%);
+				z-index: 2;
+			}
+		}
+	}
+	div.hooked_container{
+		padding: 6vw 5vw 8vw;
+		z-index: 2;
+		@media(max-width: 768px){
+			padding: 6vw 5vw 14vw;
+		}
+		@media(max-width: 420px){
+			padding: 6vw 5vw 17vw;
+		}
+		div.callouts{
+			margin-bottom: 3vw;
+			color: $ccorp;
+			text-align: center;
+			h3{
+				margin-bottom: 12vw;
+				font-size: 5vw;
+				@media(max-width: 420px){
+					font-size: 22px;
+				}
+			}
+			h4{
+				font-size: 4vw;
+				@media(max-width: 420px){
+					font-size: 18px;
+				}
+			}
+		}
+		div.embedded_video{
+			margin: 0 20vw;
+			@media(max-width: 1024px){
+				margin: 0 10vw;
+			}
+			@media(max-width: 576px){
+				margin: 0 5vw;
+			}
+		}
+		div.more{
+			display: flex;
+			justify-content: center;
+			position: absolute;
+			width: 100%;
+			left: 0;
+			bottom: 0;
+			transform: translateY(75%);
+			@media(max-width: 768px){
+				transform: translateY(60%);
+			}
+			@media(max-width: 420px){
+				transform: translateY(50%);
+			}
+		}
+	}
+	img.curves_bot{
+		@extend .no-select;
+		position: absolute;
+		width: 100vw;
+		left: 0;
+		bottom: 0;
+		transform: translateY(calc(100% - 2px));
+		z-index: 1;
+	}
+}
